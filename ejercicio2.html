@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Ordenar</title>    
+    </head>
+
+    <script> 
+
+const arreglo=["unacadena",3,9,1,10,500,1,10,true];
+let solonum= new Array;
+
+for(let i=0; i<arreglo.length;i++){
+if(typeof(arreglo[i] )=== "number")
+{
+solonum.push(arreglo[i]);
+}
+
+}
+
+for(let i=0; i<solonum.length;i++){
+    
+        for(let x=0; x<solonum.length;x++){
+            if (solonum[i]<solonum[x]){
+let t=solonum[i];
+solonum[i]=solonum[x];
+solonum[x]=t;
+
+            }
+        }
+    }
+   for (let i=0; i<solonum.length;i++){
+    console.log(solonum[i]);
+   }
+
+    
+    
+
+    
+
+
+    
+
+
+
+    </script>
+            <body>
+            </body>
+</html>
